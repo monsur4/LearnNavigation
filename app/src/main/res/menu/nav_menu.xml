@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_first_fragment"
+            android:title="First Fragment" />
+        <item
+            android:id="@+id/menu_second_fragment"
+            android:title="Second Fragment" />
+        <item
+            android:id="@+id/menu_third_fragment"
+            android:title="Third Fragment" />
+    </group>
+
+    <!--you could as well just have used the app:actionViewClass="androidx.appcompat.widget.SwitchCompat"
+     For this, app:actionLayout="@layout/nav_action_view_switch" -> I can't set onclicklistener on it-->
+    <group android:id="@+id/starred">
+        <item
+            android:id="@+id/nav_switch"
+            android:title="Starred"
+            app:actionViewClass="androidx.appcompat.widget.SwitchCompat" />
+    </group>
+</menu>
